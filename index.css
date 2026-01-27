@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background-color: white; 
+    position: sticky; 
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1); 
+}
+
+
+.nav-logo .logo {
+    width: 125px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px; 
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 14.5px;
+    font-weight: 600;
+    color: black;
+    padding: 7px; 
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: lightgray;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 15px; 
+}
+
+.nav-icons img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+main {
+    background: url("resources/banner.jpeg") no-repeat center center / cover;
+    min-height: 82.5vh;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding-top: 80px;
+}
+
+.banner-content p {
+    margin-top: -10px;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.banner-buttons {
+    font-size: 14px;        
+    font-weight: 500;       
+    line-height: 1.2;       
+    text-align: center; 
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.banner-buttons button {
+    border: none;
+    border-radius: 6px; 
+    padding: 10px 25px;
+    height: 40px;
+    width: 264px;
+    transition: background-color 0.3s ease-out;
+}
+
+.banner-buttons .btn1 {
+    background-color: #3e6ae1;
+    color: white;
+}
+
+.banner-buttons .btn2 {
+    background-color: white;
+    color: #171a20;
+}
+
+.banner-buttons .btn1:hover {
+    background-color: #335ac4;
+    cursor: pointer;
+    transition-duration: 0.35s;
+}
+
+.banner-buttons .btn2:hover {
+    background-color: #e6e6e6b6;
+    cursor: pointer;
+    transition-duration: 0.35s;
+}
+
+footer {
+    height: auto;
+    margin-top: -5px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    font-size: 14px;
+    color: #555;
+}
+
+.footer-links {
+    display: flex;
+    gap: 13px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #555;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* The Floating Button */
+.chat-fab-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color:  #202535;;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1), background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-fab-btn:hover {
+    background-color: #070b14;;
+    transform: scale(1.1);
+}
+
+/* navbar responsiveness */
+@media (max-width: 900px) {
+    nav {
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        padding: 5px 8px;
+    }
+
+    .nav-icons img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .chat-container {
+        width: 90%;
+        right: 5%;
+        bottom: 100px;
+        height: 70vh;
+    }
+}
