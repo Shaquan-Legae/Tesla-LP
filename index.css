@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Google+Sans+Text:400&text=%E2%86%90%E2%86%92%E2%86%91%E2%86%93&lang=en");
 
-body {
+html, body {
+    height: 100%;
     margin: 0;
+}
+body {
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
@@ -52,8 +57,7 @@ nav {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
+    flex: 1;
 }
 
 .banner-content {
