@@ -137,17 +137,19 @@ main {
 }
 
 .card3 {
-    background: url("resources/card-cybertruck.jpg") no-repeat center center / cover;
+    background: url("resources/card-models.jpg") no-repeat center center / cover;
+}
+
+.card4 {
+    background: url("resources/card-modelx.jpg") no-repeat center center / cover;
 }
 
 .card1,
 .card2,
 .card3,
-.energy-card.panels,
-.energy-card.powerwall,
-.energy-card.roof {
+.card4 {
     width: 600px;
-    height: 280px;
+    height: 180px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -171,7 +173,17 @@ main {
     color: #171a20;
 }
 
-.card-buttons,
+.card-buttons{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-left: -60px;
+    margin-bottom: 10px;
+}
+
 .energy-buttons {
     font-size: 14px;
     font-weight: 500;
@@ -180,15 +192,15 @@ main {
     cursor: pointer;
     transition: background-color 0.2s ease;
     margin-left: -160px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .card h2,
 .energy h2 {
     color: white;
     font-size: 30px;
-    margin-left: 20px;
-    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
 }
 
 .card-buttons button,
@@ -215,11 +227,13 @@ main {
     margin-bottom: 110px;
 }
 
-.card3 p {
-    margin-top: -5px;
+.card3 p,
+.card4 p {
+    margin-top: -8px;
     font-size: 16px;
     text-decoration: underline;
-    margin-left: 25px;
+    margin-left: 11px;
+    margin-bottom: 5px;
     color: white;
 }
 
@@ -372,6 +386,22 @@ main {
     background: url('resources/roof.jpg') no-repeat center center / cover;
 }
 
+.energy-card.panels,
+.energy-card.powerwall,
+.energy-card.roof {
+    width: 600px;
+    height: 240px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: white;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 .energy h2 {
     margin-left: 15px;
 }
@@ -443,6 +473,11 @@ footer {
         padding: 15px 20px;
     }
 
+    .hamburger {
+        display: flex;
+        z-index: 200;
+    }
+
     .nav-links {
         display: flex;
         flex-direction: column;
@@ -467,6 +502,15 @@ footer {
         margin: 15px 0;
         width: 100%;
         text-align: center;
+    }
+
+    .close-menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 40px;
+        cursor: pointer;
     }
 
     .banner-content {
@@ -503,6 +547,7 @@ footer {
     .card1, 
     .card2, 
     .card3, 
+    .card4,
     .energy-card.panels, 
     .energy-card.powerwall, 
     .energy-card.roof {
@@ -534,7 +579,8 @@ footer {
         display: block;
     }
     
-    .card3 p {
+    .card3 p,
+    .card4 p {
         margin-bottom: 20px;
     }
 
