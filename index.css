@@ -173,7 +173,7 @@ main {
     color: #171a20;
 }
 
-.card-buttons{
+.card-buttons {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.2;
@@ -191,7 +191,8 @@ main {
     text-align: center;
     cursor: pointer;
     transition: background-color 0.2s ease;
-    margin-left: -160px;
+    margin-left: -170px;
+    margin-top: -10px;
     margin-bottom: 10px;
 }
 
@@ -201,6 +202,10 @@ main {
     font-size: 30px;
     margin-left: 10px;
     margin-bottom: 5px;
+}
+
+.energy-content h2 {
+    margin-bottom: -14px;
 }
 
 .card-buttons button,
@@ -215,21 +220,22 @@ main {
 
 .card em {
     color: white;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 550;
-    margin-left: 20px;
-    margin-bottom: 80px;
+    margin-left: 15px;
+    margin-bottom: 20px;
     font-style: normal;
 }
 
 .card1 em,
 .card2 em {
-    margin-bottom: 110px;
+    margin-bottom: 35px;
+
 }
 
 .card3 p,
 .card4 p {
-    margin-top: -8px;
+    margin-top: -7px;
     font-size: 16px;
     text-decoration: underline;
     margin-left: 11px;
@@ -346,7 +352,8 @@ main {
     transition: background-color 0.3s ease-out;
 }
 
-.btn1-feat, .btn3 {
+.btn1-feat,
+.btn3 {
     background-color: #3e6ae1;
     color: white;
     border: none;
@@ -370,7 +377,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 15px;
     margin: 10px;
 }
 
@@ -405,6 +412,7 @@ main {
 .energy h2 {
     margin-left: 15px;
 }
+
 .energy-content p {
     color: white;
     font-size: 14px;
@@ -534,7 +542,7 @@ footer {
         width: 90%;
     }
 
-    #card, 
+    #card,
     .energy {
         flex-direction: column;
         align-items: center;
@@ -544,19 +552,19 @@ footer {
         margin-top: 20px;
     }
 
-    .card1, 
-    .card2, 
-    .card3, 
+    .card1,
+    .card2,
+    .card3,
     .card4,
-    .energy-card.panels, 
-    .energy-card.powerwall, 
+    .energy-card.panels,
+    .energy-card.powerwall,
     .energy-card.roof {
         width: 90%;
         height: 480px;
         margin: 0 auto;
     }
 
-    .card-buttons, 
+    .card-buttons,
     .energy-buttons {
         margin-left: 0;
         margin-bottom: 30px;
@@ -567,18 +575,18 @@ footer {
         align-items: center;
     }
 
-    .card-buttons button, 
+    .card-buttons button,
     .energy-buttons button {
         width: 90%;
     }
 
-    .card em, 
+    .card em,
     .card2 em {
         margin-bottom: 20px;
         margin-left: 20px;
         display: block;
     }
-    
+
     .card3 p,
     .card4 p {
         margin-bottom: 20px;
@@ -640,8 +648,8 @@ footer {
         width: 100%;
     }
 
-    .btn1-feat, 
-    .btn2-feat, 
+    .btn1-feat,
+    .btn2-feat,
     .btn3 {
         width: 100%;
     }
